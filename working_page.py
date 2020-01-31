@@ -46,7 +46,7 @@ while True:
             expfile=os.path.join(path,file_name+".txt")
             print("Rename the file")
             newname=str(input())
-            # source=r'C:\Users\77077\OneDrive\Рабочий стол\proga\WEEK2\1.txt'
+          
             dest=os.path.join(path,newname+".txt")
             os.rename(expfile, dest)
             print("File renamed successfully")
@@ -107,13 +107,7 @@ while True:
         for entry in mainpapkas:
             if entry.is_dir() or entry.is_file():
                 print(entry.name)
-        # while True:
-            # print("""What directory do you want to work with?
-            # Print the name of the directory""") #without any spaces
-            # dirname=str(input())
-            # # expdir=(r"C:\Users\77077\OneDrive\Рабочий стол\proga"+"\\"+dirname)
-            # print(path)
-            # # os.system('cls')
+        
         print("""Press 1 to rename the directory
 Press 2 to print number of files in it
 Press 3 to print number of directories in it
@@ -129,10 +123,7 @@ Press 6 to add new directory to this """)
             print("Write the name of directory that you wanna work with")
             dir_rename=str(input())
             expdir=os.path.join(path2,dir_rename)
-            # os.system('cls')
-            # print(expdir)
-            # isdir=os.path.isdir(expdir)
-            # isdir.close()
+            
             if os.path.isdir(expdir):
                 print("Rename the directory")
                 newdirname=str(input())
@@ -168,7 +159,7 @@ Press 6 to add new directory to this """)
             print("Write the name of directory that you wanna work with")
             dir_cnt=str(input())
             expdir=os.path.join(path2,dir_cnt)
-                        # way=r'C:\Users\77077\OneDrive\Рабочий стол\proga\aaaaa.py'
+                        
             content_dir=os.scandir(expdir)
             print("Files and directories in ", expdir)
             for entry in content_dir:
